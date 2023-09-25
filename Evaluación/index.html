@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Calculadora de Matrices</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Calculadora de Matrices</h2>
+    <div>
+      <label for="rowsA">Filas Matriz A:</label>
+      <input type="number" id="rowsA">
+      <label for="colsA">Columnas Matriz A:</label>
+      <input type="number" id="colsA">
+      <button onclick="createMatrix('matrixA', 'rowsA', 'colsA')">Crear Matriz A</button>
+    </div>
+    <div id="matrixAInput"></div>
+
+    <div>
+      <label for="rowsB">Filas Matriz B:</label>
+      <input type="number" id="rowsB">
+      <label for="colsB">Columnas Matriz B:</label>
+      <input type="number" id="colsB">
+      <button onclick="createMatrix('matrixB', 'rowsB', 'colsB')">Crear Matriz B</button>
+    </div>
+    <div id="matrixBInput"></div>
+
+    <div>
+      <h3>Operaciones:</h3>
+      <button onclick="addMatrices()">Sumar Matrices</button>
+      <button onclick="multiplyMatrices()">Multiplicar Matrices</button>
+    </div>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
